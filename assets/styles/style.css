@@ -1,0 +1,134 @@
+ * {
+     box-sizing: border-box;
+}
+ body {
+     font-family: 'Open Sans',sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: white;
+     color: black;
+}
+ #content h2{
+     text-align: center;
+}
+ footer {
+     padding: 10px;
+     color: black;
+     background-color: #CDFAD5;
+     text-align: center;
+     font-weight:;
+     border-radius: 30px 30px 0 0;
+}
+ footer a {
+     text-decoration: none;
+}
+ footer span {
+     margin-right:5px;
+}
+ .headerutama {
+     font-size: 15px;
+     padding: 20px;
+     background-color: #F6FDC3;
+     background-color: #CDFAD5;
+     padding-left: 70px;
+}
+ 
+ nav {
+     background-color: #CDFAD5;
+     padding: .05px;
+     position: sticky;
+     top: 0;
+     border-radius: 0 0 30px 30px;
+}
+ nav a {
+     font-size: 16px;
+     font-weight: 500;
+     text-decoration: none;
+     color: black;
+}
+ nav a:hover {
+     font-weight: bold;
+}
+ nav li {
+     list-style-type: none;
+     background-color: #F6FDC3;
+     border-radius: 25px;
+     border: 4px solid white;
+     padding: 9px;
+}
+ nav ul {
+     padding-inline: 4rem;
+     display: flex;
+     gap: 2rem;
+}
+ #content p {
+     text-align: justify;
+     text-indent: 30px;
+}
+ .profile header {
+     text-align: center;
+}
+ .featured-image {
+     width: 100%;
+     max-height: 350px;
+     object-fit: cover;
+     object-position: center;
+     border: 0 solid #FF8080;
+     border-radius: 20px;
+}
+ .profile img {
+     width: 100px;
+}
+ .card {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.5);
+     border-radius: 20px;
+     border: 3px solid #CDFAD5;
+     padding: 20px;
+}
+ main {
+     padding: 20px;
+     display: flex;
+     gap: 1.5rem;
+}
+ #content {
+     flex: 5;
+     display: flex;
+     flex-flow: column nowrap;
+     gap: 1rem 2rem;
+}
+ aside {
+     flex: 1.9;
+}
+ aside > article{
+     position: -webkit-sticky;
+    /* Safari */
+     position: sticky;
+     top: 30px;
+     background-color: white;
+     text-align: center;
+}
+ header {
+     display: inline;
+}
+ @media screen and (max-width: 1050px) {
+     main {
+         flex-flow: column nowrap;
+    }
+     main aside {
+         align-self: center;
+    }
+     aside > article{
+         position:static;
+    }
+}
+ @media screen and (max-width: 768px) {
+     nav ul {
+         justify-content: center;
+    }
+     main aside {
+         align-self: stretch;
+    }
+     aside > article{
+         position:static;
+    }
+}
